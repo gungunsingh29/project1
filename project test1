@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignetto Vineyards</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Vignetto</h1>
+            <p>Vineyard & Estate Winery</p>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</a></li>
+                <li>About</a></li>
+                <li>Events</a></li>
+                <li>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <p class="subheading">VIGNETO VINEYARDS</p>
+            <h2>The ultimate food and wine experience</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus neque ratione esse culpa, non similique.</p>
+            <a href="#" class="btn">More Videos</a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>Adventure Is The Best Way To Learn Something New</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam molestias sit nemo illo ducimus, sequi dignissimos blanditiis ipsum voluptas quisquam, nostrum debitis obcaecati deserunt tempore! Commodi maiores quod error!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla est quae? Porro, nobis quisquam..</p>
+    </section>
+
+    <section class="wine-section">
+        <img src="istockphoto-1182488944-612x612.webp" alt="Wine bottles and glasses">
+        <div class="wine-section-content">
+            <h2>Book Your Next Adventure</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque temporibus eos nemo soluta odit. Iste!</p>
+            <a href="#" class="button">Book a Tour</a>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <h2>Our Events</h2>
+        <div class="event">
+            <img src="photo-1619810490925-e27ba7623459.avif" alt="Wine bottles">
+            <div class="event-content">
+                <h3>Visit Wine Country</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores qui alias, nihil et sunt illum!</p>
+            </div>
+        </div>
+        <div class="event">
+            <img src="istockphoto-909208170-612x612.webp" alt="Wine event">
+            <div class="event-content">
+                <h3>Wine Events</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic repudiandae vitae. Aperiam, maiores quisquam!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="scenic-section">
+        <img src="istockphoto-991732782-612x612.webp" alt="wine glass" >
+    </section>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h1>A New Adventure Is Waiting For You</h1>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Vigneto</h2>
+            <p>Vineyard & Estate Winery</p>
+            <nav class="footer-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Events</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+}
+
+.logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #555;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+.hero {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1508471608746-b7f6b8a5b0b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2luZSUyMHZpZXd8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.subheading {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    margin: 10px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wine-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.wine-section img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.wine-section-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.wine-section-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b38e5d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.events-section {
+    padding: 50px 20px;
+}
+
+.events-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.event img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.event-content h3 {
+    font-size: 1.5rem;
+}
+
+.scenic-section {
+    padding: 50px 0;
+    height: 500;
+    width:800;
+    text-align: center;
+}
+
+.scenic-section img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #1c1c1c;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-section .logo {
+    width: 50px; 
+    margin-bottom: 10px;
+}
+
+.footer h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.footer p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #ffdd57; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
